@@ -42,6 +42,7 @@ test.describe('SauceDemo-Xpath', () => {
 
     // #1g)
     await expect(login_form).not.toBeVisible();
+    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
     const page_title = page.locator('xpath=//span[@data-test="title"]');
     await expect(page_title).toBeVisible();
     await expect(page_title).toContainText('Products');
@@ -60,6 +61,7 @@ test.describe('SauceDemo-Xpath', () => {
     // #1j)
     await expect(page_title).not.toBeVisible();
     await expect(login_form).toBeVisible();
+    await expect(page).toHaveURL('https://www.saucedemo.com/');
 
   });
 
