@@ -12,13 +12,13 @@ test.describe('SauceDemo-Xpath', () => {
     const loginContainer = rootContainer.locator('xpath=//div[@data-test="login-container"]');
     const loginForm = loginContainer.locator('xpath=//form');
 
-    // Elementy uvnitř formuláře 
+    // elementy uvnitř formuláře 
     const buttonLogin = loginForm.locator('xpath=//input[@data-test="login-button"]');
     const fieldUsername = loginForm.locator('xpath=//input[@data-test="username"]');
     const fieldPassword = loginForm.locator('xpath=//input[@data-test="password"]');
     const errorMessage = loginForm.locator('xpath=//h3[@data-test="error"]');
 
-    // Elementy na stránce s produkty 
+    // elementy na stránce s produkty 
     const pageTitle = page.locator('xpath=//span[@data-test="title"]');
     const burgerMenu = page.locator('xpath=//button[@id="react-burger-menu-btn"]');
     const logoutLink = page.locator('xpath=//a[@id="logout_sidebar_link"]');
@@ -83,13 +83,13 @@ test.describe('SauceDemo-CSS', () => {
     const baseUrl = 'https://www.saucedemo.com/';
     const loginForm = page.locator('div.login-box form');
 
-    // Elementy uvnitř formuláře – hledáme relativně vůči loginForm
+    // elementy uvnitř formuláře 
     const buttonLogin = loginForm.locator('[data-test="login-button"]');
     const fieldUsername = loginForm.locator('[data-test="username"]');
     const fieldPassword = loginForm.locator('[data-test="password"]');
     const errorMessage = loginForm.locator('[data-test="error"]');
 
-    // Elementy na stránce s produkty – hledáme vůči page
+    // elementy na stránce s produkty 
     const pageTitle = page.locator('[data-test="title"]');
     const burgerMenu = page.locator('#react-burger-menu-btn');
     const logoutLink = page.locator('#logout_sidebar_link');
