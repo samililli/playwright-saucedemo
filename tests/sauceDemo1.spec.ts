@@ -145,3 +145,5 @@ test.describe('SauceDemo-CSS', () => {
   });
 
 });
+
+// konec
